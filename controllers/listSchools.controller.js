@@ -1,4 +1,4 @@
-const db = require("../server/db");
+const db = require("../server/dbconn");
 const calculateDistance = require("../utilities/harvesineformula");
 
 const listSchools = (req, res) => {
@@ -20,7 +20,7 @@ const listSchools = (req, res) => {
   }
 
   //querying db for schools 
-  db.query("SELECT * FROM Schools", (err, schools) => {
+ db.query("SELECT * FROM Schools", (err, schools) => {
    if (err) {
   console.error("MYSQL ERROR:", err);
   return res.status(500).json({

@@ -1,4 +1,5 @@
-const db = require("../server/db");
+const db = require("../server/dbconn");
+
 
 const addSchool=(req,res)=>{
     const { name, address, latitude, longitude } = req.body;
