@@ -8,7 +8,7 @@ const createDBConnection = () => {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     ssl: {
-       ca: process.env.DB_SSL_CA.replace(/\\n/g, '\n')
+       ca: process.env.DB_SSL_CA
     }
   });
 
