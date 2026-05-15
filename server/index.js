@@ -16,9 +16,7 @@ app.use(express.json());
 app.use("/api/schools/", schoolRoutes);
 
 
-app.use(cors());
-app.use(express.json());
-app.use("/api/schools/", schoolRoutes);
+
 
 app.listen(Port,(req,res)=>{
     console.log('server is running');
