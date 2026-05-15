@@ -96,7 +96,7 @@ You pass:
 (lat2, lon2) → second point (school location)
 2. Convert degrees to radians
 const toRad = (deg) => deg * Math.PI / 180;
-Why needed?
+
 
 Math functions in JavaScript (sin, cos) work in radians, not degrees.
 
@@ -171,6 +171,6 @@ return R * c;
  Sorting results by computed distancein ascending order.
  
 # Environment Notes(optional)
-SSL CA is optional depending on your MySQL provider
+SSL CA is optional depending on your MySQL provider.
 For local development, SSL can be removed or replaced with file-based CA
 
