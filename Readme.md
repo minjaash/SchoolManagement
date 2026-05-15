@@ -1,4 +1,30 @@
-## School Mangement Api
+### -------------------- School Mangement Api----------------------
+
+**********This project is hosted and the url is-https://schoolmanagement-m1kq.onrender.com
+1.Api for adding School-https://schoolmanagement-m1kq.onrender.com/api/schools/addSchool
+with request body- {
+  "name": "ABC School",
+  "address": "Main Road, Delhi",
+  "latitude": 28.7041,
+  "longitude": 77.1025
+};
+2.Api for list for list of nearby schools-https://schoolmanagement-m1kq.onrender.com/api/schools/?latitude=<value>&longitude=<value>.
+response body-
+{
+  "success": true,
+  "count": 10,
+  "data": [
+    {
+      "id": 1,
+      "name": "ABC School",
+      "address": "Delhi",
+      "latitude": 28.7041,
+      "longitude": 77.1025,
+      "distance_km": 12.45
+    }
+  ]
+}***********
+
 
 # Features:
 Add a new school with name, address, latitude, and longitude
