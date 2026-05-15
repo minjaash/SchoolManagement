@@ -1,4 +1,4 @@
-const db = require("../server/dbconn");
+const db = require("../server/dbConn");
 
 
 const addSchool=(req,res)=>{

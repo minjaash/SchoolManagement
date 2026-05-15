@@ -26,6 +26,6 @@ const createDBConnection = () => {
 // ✅ IMPORTANT: CALL IT HERE
 const db = createDBConnection();
 
-module.exports = db;
+module.exports=db;
 
 //for local host- ca: fs.readFileSync(path.resolve(process.env.DB_SSL_CA_PATH))

@@ -1,4 +1,4 @@
-const db = require("../server/dbconn");
+const db = require("../server/dbConn");
 const calculateDistance = require("../utilities/harvesineformula");
 
 const listSchools = (req, res) => {
