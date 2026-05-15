@@ -1,6 +1,6 @@
 const mysql = require("mysql2");
-const fs = require("fs");
-const path = require("path");
+//const fs = require("fs"); for local host
+//const path = require("path"); for localhost
 //db connection
 
 function createDBConnection() {
@@ -11,8 +11,9 @@ function createDBConnection() {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
      ssl: {
-           ca: fs.readFileSync(path.resolve(process.env.DB_SSL_CA_PATH)),
-          }
+           //for local host- ca: fs.readFileSync(path.resolve(process.env.DB_SSL_CA_PATH))
+             ca: process.env.DB_SSL_CA
+           }
   });
 
   db.connect((err) => {
